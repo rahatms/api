@@ -44,9 +44,7 @@ const deleteBook = async (options = {}) => {
 };
 
 const updateBook = async (filter, values) => {
-    const book = await Book.updateOne(filter, values);
-    return book;
-
+    return await Book.updateOne(filter, values);
 };
 
 module.exports = {
